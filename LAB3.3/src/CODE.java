@@ -1,6 +1,29 @@
 
 public class CODE 
 {
+	public static void main (String[] args)
+	{
+	String []L1 = {"apple" , "banana", "microsoft", "zorro" , "cucumuber" , "cake"};
+	String [] L2 = {"cherry" , "mahogany" , "oreos" , "pinata"};
+	int [] L3 = {3,2,4,65,23,145,66,234,1234,6,24,53};
+	
+	//Merge Test
+	long start = System.nanoTime();
+	String[] mergeResult = mergeSort(L1);
+	long end = System.nanoTime();
+	long time = end - start;
+	System.out.println();
+	System.out.println(mergeResult);
+	}
+	//Partition
+	/*long start = System.nanoTime();
+	int pivotFinalPos = partition(L3);
+	long end = System.nanoTime();
+	long time = end - start;
+	System.out.println("Partition test took: " + time + " nanoseconds");
+	System.out.println("Final Pivot Position: " + pivotFinalPos);
+	}
+	*/
 	public static String[] mergeSort(String[]L1)
 	{
 		//Base code
