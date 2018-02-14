@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class CODE 
 {
@@ -7,6 +8,9 @@ public class CODE
 	String [] L2 = {"cherry" , "mahogany" , "oreos" , "pinata"};
 	int [] L3 = {3,2,4,65,23,145,66,234,1234,6,24,53};
 	
+	System.out.print()
+	
+	//
 	//Merge Test
 	long start = System.nanoTime();
 	String[] mergeResult = mergeSort(L1);
@@ -34,7 +38,7 @@ public class CODE
 		{
 			return L1;
 		}
-		return (merge(mergeSort(left) , mergeSort(right)));
+		return (merge(mergeSort(right) , mergeSort(left)));
 	}
 	public static String[] merge(String [] L1, String [] L2) 
 	{
